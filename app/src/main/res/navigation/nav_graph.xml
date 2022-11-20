@@ -9,12 +9,20 @@
         android:id="@+id/startFragment"
         android:name="com.example.cupcakeorderappvm.StartFragment"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_flavorFragment"
+            app:destination="@id/flavorFragment" />
+    </fragment>
     <fragment
         android:id="@+id/pickUpFragment"
         android:name="com.example.cupcakeorderappvm.PickUpFragment"
         android:label="fragment_pickup"
-        tools:layout="@layout/fragment_pickup" />
+        tools:layout="@layout/fragment_pickup" >
+        <action
+            android:id="@+id/action_pickUpFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.cupcakeorderappvm.SummaryFragment"
@@ -24,5 +32,9 @@
         android:id="@+id/flavorFragment"
         android:name="com.example.cupcakeorderappvm.FlavorFragment"
         android:label="fragment_flavor"
-        tools:layout="@layout/fragment_flavor" />
+        tools:layout="@layout/fragment_flavor" >
+        <action
+            android:id="@+id/action_flavorFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+    </fragment>
 </navigation>
