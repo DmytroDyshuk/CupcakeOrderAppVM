@@ -40,7 +40,7 @@ class SummaryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.apply {
-
+            viewModel = sharedViewModel
             sendButton.setOnClickListener { sendOrder() }
         }
     }
