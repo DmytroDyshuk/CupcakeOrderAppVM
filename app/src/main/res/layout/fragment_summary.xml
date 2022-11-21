@@ -21,6 +21,9 @@
         <variable
             name="viewModel"
             type="com.example.cupcakeorderappvm.model.OrderViewModel" />
+        <variable
+            name="fragmentSummary"
+            type="com.example.cupcakeorderappvm.SummaryFragment" />
     </data>
 
     <ScrollView
@@ -130,7 +133,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/side_margin"
-                android:text="@string/send" />
+                android:text="@string/send"
+                android:onClick="@{() -> fragmentSummary.sendOrder()}"/>
 
         </LinearLayout>
 

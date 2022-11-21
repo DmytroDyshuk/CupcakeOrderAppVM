@@ -42,7 +42,7 @@ class PickUpFragment : Fragment() {
         binding?.apply {
             viewModel = sharedViewModel
             lifecycleOwner = viewLifecycleOwner
-            nextButton.setOnClickListener { goToNextScreen() }
+            fragmentPickup = this@PickUpFragment
         }
     }
 
@@ -51,7 +51,7 @@ class PickUpFragment : Fragment() {
         binding = null
     }
 
-    private fun goToNextScreen() {
+    fun goToNextScreen() {
         findNavController().navigate(R.id.action_pickUpFragment_to_summaryFragment)
     }
 

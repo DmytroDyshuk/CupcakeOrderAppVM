@@ -42,7 +42,7 @@ class SummaryFragment : Fragment() {
         binding?.apply {
             viewModel = sharedViewModel
             lifecycleOwner = viewLifecycleOwner
-            sendButton.setOnClickListener { sendOrder() }
+            fragmentSummary = this@SummaryFragment
         }
     }
 
@@ -51,7 +51,7 @@ class SummaryFragment : Fragment() {
         binding = null
     }
 
-    private fun sendOrder() {
+    fun sendOrder() {
         Toast.makeText(activity, "Send Order", Toast.LENGTH_SHORT).show()
     }
 

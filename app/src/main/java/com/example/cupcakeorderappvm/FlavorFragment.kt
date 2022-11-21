@@ -42,7 +42,7 @@ class FlavorFragment : Fragment() {
         binding?.apply {
             viewModel = sharedViewModel
             lifecycleOwner = viewLifecycleOwner
-            nextButton.setOnClickListener { goToNextScreen() }
+            fragmentFlavor = this@FlavorFragment
         }
     }
 
@@ -51,7 +51,7 @@ class FlavorFragment : Fragment() {
         binding = null
     }
 
-    private fun goToNextScreen() {
+    fun goToNextScreen() {
         findNavController().navigate(R.id.action_flavorFragment_to_pickUpFragment)
     }
 

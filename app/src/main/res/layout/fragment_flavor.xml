@@ -22,6 +22,9 @@
         <variable
             name="viewModel"
             type="com.example.cupcakeorderappvm.model.OrderViewModel" />
+        <variable
+            name="fragmentFlavor"
+            type="com.example.cupcakeorderappvm.FlavorFragment" />
     </data>
 
     <ScrollView
@@ -110,6 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/side_margin"
                 android:text="@string/next"
+                android:onClick="@{() -> fragmentFlavor.goToNextScreen()}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
