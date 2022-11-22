@@ -71,7 +71,7 @@ class OrderViewModel : ViewModel() {
         _price.value = calculatePrice
     }
 
-    private fun resetOrder() {
+    fun resetOrder() {
         _orderQuantity.value = 0
         _cupcakeFlavor.value = ""
         _date.value = dateOptions[0]

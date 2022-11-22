@@ -55,4 +55,9 @@ class FlavorFragment : Fragment() {
         findNavController().navigate(R.id.action_flavorFragment_to_pickUpFragment)
     }
 
+    fun cancelOrder() {
+        sharedViewModel.resetOrder()
+        findNavController().navigate(R.id.action_flavorFragment_to_startFragment)
+    }
+
 }
