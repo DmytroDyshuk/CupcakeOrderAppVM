@@ -49,16 +49,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="Thursday"
-                    android:checked="@{viewModel.date.equals(viewModel.dateOptions[0])}"
+                    android:checked="@{viewModel.date.equals(viewModel.dateOptions[0]) &amp;&amp; viewModel.cupcakeFlavor != @string/apple}"
                     android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[0])}"
-                    android:text="@{viewModel.dateOptions[0]}"/>
+                    android:text="@{viewModel.dateOptions[0]}"
+                    android:enabled="@{viewModel.cupcakeFlavor != @string/apple}"/>
 
                 <RadioButton
                     android:id="@+id/option1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="Friday"
-                    android:checked="@{viewModel.date.equals(viewModel.dateOptions[1])}"
+                    android:checked="@{viewModel.date.equals(viewModel.dateOptions[1]) || viewModel.cupcakeFlavor == @string/apple}"
                     android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[1])}"
                     android:text="@{viewModel.dateOptions[1]}"/>
 
@@ -79,6 +80,7 @@
                     android:checked="@{viewModel.date.equals(viewModel.dateOptions[3])}"
                     android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[3])}"
                     android:text="@{viewModel.dateOptions[3]}"/>
+
             </RadioGroup>
 
             <View
