@@ -16,6 +16,9 @@ class OrderViewModel : ViewModel() {
     private val _orderQuantity = MutableLiveData<Int>()
     var orderQuantity: LiveData<Int> = _orderQuantity
 
+    private val _username = MutableLiveData<String>()
+    var username: LiveData<String> = _username
+
     private val _cupcakeFlavor = MutableLiveData<String>()
     var cupcakeFlavor: LiveData<String> = _cupcakeFlavor
 
@@ -36,6 +39,10 @@ class OrderViewModel : ViewModel() {
     fun setQuantity(numberCupcakes: Int) {
         _orderQuantity.value = numberCupcakes
         updatePrice()
+    }
+
+    fun setUsername(name: String) {
+        _username.value = name
     }
 
     fun setFlavor(desiredFlavor: String) {
@@ -73,6 +80,7 @@ class OrderViewModel : ViewModel() {
 
     fun resetOrder() {
         _orderQuantity.value = 0
+        _username.value = ""
         _cupcakeFlavor.value = ""
         _date.value = dateOptions[0]
         _price.value = 0.0

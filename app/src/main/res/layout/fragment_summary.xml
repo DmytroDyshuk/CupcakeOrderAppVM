@@ -69,6 +69,31 @@
                     android:layout_marginBottom="@dimen/side_margin" />
 
                 <TextView
+                    style="@style/Widget.OrderCupcake.TextView.OrderSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your name"
+                    android:textAllCaps="true"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/username"
+                    style="@style/Widget.OrderCupcake.TextView.OrderSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    tools:text="Username"
+                    android:text="@{viewModel.username.toString()}"/>
+                
+                <View
+                    android:id="@+id/divider2"
+                    style="@style/Widget.OrderCupcake.Divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/side_margin"
+                    android:layout_marginBottom="@dimen/side_margin" />
+
+                <TextView
                     android:id="@+id/flavor_label"
                     style="@style/Widget.OrderCupcake.TextView.Label"
                     android:layout_width="wrap_content"
@@ -85,7 +110,7 @@
                     android:text="@{viewModel.cupcakeFlavor}"/>
 
                 <View
-                    android:id="@+id/divider2"
+                    android:id="@+id/divider3"
                     style="@style/Widget.OrderCupcake.Divider"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -109,7 +134,7 @@
                     android:text="@{viewModel.date}"/>
 
                 <View
-                    android:id="@+id/divider3"
+                    android:id="@+id/divider4"
                     style="@style/Widget.OrderCupcake.Divider"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"

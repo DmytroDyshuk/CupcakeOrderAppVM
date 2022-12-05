@@ -84,7 +84,25 @@
                     android:checked="@{viewModel.cupcakeFlavor.equals(@string/coffee)}"
                     android:onClick="@{() -> viewModel.setFlavor(@string/coffee)}"/>
 
+                <RadioButton
+                    android:id="@+id/apple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apple"
+                    android:checked="@{viewModel.cupcakeFlavor.equals(@string/apple)}"
+                    android:onClick="@{() -> viewModel.setFlavor(@string/apple)}"/>
+
             </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_available_for_same_day"
+                android:textSize="12sp"
+                android:layout_marginStart="86dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toStartOf="@id/flavor_options"
+                app:layout_constraintBottom_toBottomOf="@id/flavor_options"/>
 
             <View
                 android:id="@+id/divider"

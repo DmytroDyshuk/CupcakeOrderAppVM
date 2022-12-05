@@ -11,6 +11,11 @@
     <string name="red_velvet">Red Velvet</string>
     <string name="salted_caramel">Salted Caramel</string>
     <string name="coffee">Coffee</string>
+    <string name="apple">Apple</string>
+    <string name="not_available_for_same_day">(not being available for same day pickup)</string>
+    <string name="your_name">What\'s your name?</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter name</string>
     <string name="special_flavor">Special Flavor</string>
     <string name="cancel">Cancel</string>
     <string name="next">Next</string>
@@ -23,6 +28,7 @@
     <string name="subtotal_price">Subtotal %s</string>
     <string name="total_price">Total %s</string>
     <string name="new_cupcake_order">New Cupcake Order</string>
+    <string name="error_name">Please enter a name</string>
     <string name="order_details">Quantity: %1$s \n Flavor: %2$s \nPickup date: %3$s \n
         Total: %4$s \n\n Thank you!</string>
     <plurals name="cupcakes">

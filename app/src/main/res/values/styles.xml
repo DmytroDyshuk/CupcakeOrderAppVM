@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Text Appearance Subtitle1 style -->
-    <style name="TextAppearance.Cupcake.Subtitle1"
-        parent="TextAppearance.MaterialComponents.Subtitle1">
+    <style name="TextAppearance.Cupcake.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="android:textSize">18sp</item>
     </style>
 
@@ -30,8 +29,7 @@
     </style>
 
     <!-- Radio Button style -->
-    <style name="Widget.OrderCupcake.CompoundButton.RadioButton"
-        parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+    <style name="Widget.OrderCupcake.CompoundButton.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
         <item name="android:paddingEnd">@dimen/radio_button_padding</item>
         <item name="android:paddingStart">@dimen/radio_button_padding</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
@@ -41,4 +39,5 @@
     <style name="Widget.OrderCupcake.Divider" parent="">
         <item name="android:background">?attr/dividerHorizontal</item>
     </style>
+
 </resources>
